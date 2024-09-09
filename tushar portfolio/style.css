@@ -28,16 +28,18 @@ video{
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(239, 250, 255, 0.2);
     backdrop-filter: blur(10px);
-    border-radius: 30px;
+    border-radius: 30px 90px 30px 30px;
     width: 90%;
-    max-width: 800px;
+    max-width: 970px;
     height: 60%;
     position: absolute;
     overflow: hidden;
     z-index: 1;
-    clip-path: polygon(15% 0, 20% 8%, 100% 8%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    /* clip-path: url(#clip-square); */
+    clip-path: polygon(15% 0, 18% 8%, 97% 8%, 98% 8.5%, 99% 9%, 100% 9.5%, 100% 100%, 0 100%, 0 0);
+    /* clip-path: polygon(15% 0, 20% 8%, 100% 8%, 100% 100%, 0 100%, 0% 60%, 0 0); */
     /* clip-path: path("M 0 8 H 12 V 2 S 12 1 11 1 H 4 L 3 0 L 0 0"); */
     /* clip-path: polygon(63.33px 310.47px,342.67px 310.47px,343.08px 130.35px,340.19px 118.57px,333.29px 110.79px,317.50px 107.24px,163.33px 106.00px,137.67px 82.53px,64.33px 81.53px); */
     display: flex;
@@ -47,15 +49,16 @@ video{
 .card1 {
     background: rgba(179, 199, 249, 0.2);
     backdrop-filter: blur(10px);
-    border-radius: 30px;
+    border-radius: 30px 90px 30px 30px;
     width: 90%;
-    max-width: 800px;
+    max-width: 970px;
     height: 60%;
     position: relative;
     overflow: hidden;
     z-index: 0;
     top: -47px;
-    clip-path: polygon(15% 0, 20% 8%, 100% 8%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    clip-path: polygon(15% 0, 18% 8%, 97% 8%, 98% 8.5%, 99% 9%, 100% 9.5%, 100% 100%, 0 100%, 0 0);
+    /* clip-path: polygon(15% 0, 20% 8%, 100% 8%, 100% 100%, 0 100%, 0% 60%, 0 0); */
     /* clip-path: path("M 0 8 H 12 V 2 S 12 1 11 1 H 4 L 3 0 L 0 0"); */
     /* clip-path: polygon(63.33px 310.47px,342.67px 310.47px,343.08px 130.35px,340.19px 118.57px,333.29px 110.79px,317.50px 107.24px,163.33px 106.00px,137.67px 82.53px,64.33px 81.53px); */
 }
@@ -65,16 +68,16 @@ video{
     color: rgb(255, 255, 255);
     top: 116px;
     /* left: 28%; */
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(239, 250, 255, 0.3);
     padding: 10px 20px;
     border-radius: 10px;
     width: 90%;
-    max-width: 680px;
+    max-width: 825px;
     height: 65px;
     transition: transform 0.3s ease;
     backdrop-filter: blur(4px);
-    font-weight: 500;
-    font-size: 23px;
+    font-weight: 400;
+    font-size: 25px;
     z-index: 1;
     margin-left: 60px;
 }
@@ -88,11 +91,11 @@ video{
     padding: 10px 20px;
     border-radius: 10px;
     width: 90%;
-    max-width: 680px;
+    max-width: 825px;
     height: 70px;
     transition: transform 0.3s ease;
-    font-weight: 500;
-    font-size: 23px;
+    font-weight: 400;
+    font-size: 25px;
     z-index: 1;
     margin-left: -14px;
 }
@@ -115,8 +118,8 @@ video{
 }
 .social-icons {
     position: absolute;
-    right: 18%;
-    top: 57%;
+    right: 12%;
+    top: 59%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -197,8 +200,8 @@ video{
 
 .menu-icon {
     position: absolute;
-    top: 45px;
-    right: 5%;
+    top: 50px;
+    right: 2%;
     font-size: 24px;
     color: #333;
     cursor: pointer;
