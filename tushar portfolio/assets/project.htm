@@ -44,6 +44,7 @@ h1 {
 .case-studies {
     display: flex;
     gap: 40px;
+    position: relative;
 }
 .case-study {
     background: rgba(255, 255, 255, 0.2);
@@ -182,7 +183,7 @@ h1 {
                       <filter id="Path_19_1" x="0" y="0" filterUnits="userSpaceOnUse">
                         <feOffset input="SourceAlpha"/>
                         <feGaussianBlur class="blur-width" stdDeviation="5.5" result="blur"/>
-                        <feFlood class="flood-color" flood-color="#436EFF7C" flood-opacity="0.89" result="color"/>
+                        <feFlood class="flood-color" flood-color="#436EFF7D" flood-opacity="0.89" result="color"/>
                         <feComposite operator="out" in="SourceGraphic" in2="blur"/>
                         <feComposite operator="in" in="color"/>
                         <feComposite operator="in" in2="SourceGraphic"/>
@@ -207,7 +208,7 @@ h1 {
                       <filter id="Path_19_2" x="0" y="0" filterUnits="userSpaceOnUse">
                         <feOffset input="SourceAlpha"/>
                         <feGaussianBlur class="blur-width" stdDeviation="5.5" result="blur"/>
-                        <feFlood class="flood-color" flood-color="#436EFF7C" flood-opacity="0.89" result="color"/>
+                        <feFlood class="flood-color" flood-color="#436EFF7D" flood-opacity="0.89" result="color"/>
                         <feComposite operator="out" in="SourceGraphic" in2="blur"/>
                         <feComposite operator="in" in="color"/>
                         <feComposite operator="in" in2="SourceGraphic"/>
@@ -234,7 +235,7 @@ h1 {
                       <filter id="Path_19_3" x="0" y="0" filterUnits="userSpaceOnUse">
                         <feOffset input="SourceAlpha"/>
                         <feGaussianBlur class="blur-width" stdDeviation="5.5" result="blur"/>
-                        <feFlood class="flood-color" flood-color="#436EFF7C" flood-opacity="0.89" result="color"/>
+                        <feFlood class="flood-color" flood-color="#436EFF7D" flood-opacity="0.89" result="color"/>
                         <feComposite operator="out" in="SourceGraphic" in2="blur"/>
                         <feComposite operator="in" in="color"/>
                         <feComposite operator="in" in2="SourceGraphic"/>
@@ -270,14 +271,14 @@ h1 {
         svgElement.addEventListener('mouseenter', function() {
             const floodElement = svgElement.querySelector('.flood-color');
             const floodBlur = svgElement.querySelector('.blur-width');
-            floodElement.setAttribute('flood-color', '#0D6390');  // Change color on hover
+            floodElement.setAttribute('flood-color', '#1DB4F0');  // Change color on hover
             floodBlur.setAttribute('stdDeviation', '15.5');
         });
 
         svgElement.addEventListener('mouseleave', function() {
             const floodElement = svgElement.querySelector('.flood-color');
             const floodBlur = svgElement.querySelector('.blur-width');
-            floodElement.setAttribute('flood-color', '#436EFF7C');  // Revert back to the original color
+            floodElement.setAttribute('flood-color', '#436EFF7D');  // Revert back to the original color
             floodBlur.setAttribute('stdDeviation', '5.5');
         });
     });
