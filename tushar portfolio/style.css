@@ -270,7 +270,6 @@ video{
     right: 2%;
     font-size: 24px;
     color: #333;
-    cursor: pointer;
 
     img {
         height: 90px;
@@ -405,6 +404,7 @@ h1 {
     .tab:hover, .graphics:hover{
         transform: translateY(-30px);
         font-weight: 700;
+        cursor: pointer;
     }
 
     .menu-icon:hover::before,
@@ -427,17 +427,20 @@ h1 {
 .social-icon:hover::after {
     opacity: 1;
     visibility: visible;
+    cursor: pointer;
 }
 
 .social-icon:hover::before, .social-icon:hover {
     background-color: #fff;
     color: black;
     font-weight: 700;
+    cursor: pointer;
 }
 
 
 .social-icon:hover::after {
     border-color: transparent transparent #fff transparent; /* Change arrow color when hovered */
+    cursor: pointer;
 }
   }
 
