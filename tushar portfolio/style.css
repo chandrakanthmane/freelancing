@@ -447,13 +447,30 @@ h1 {
   /*tablet view*/
   @media only screen and (min-width:481px) and (max-width: 1024px)  {
     .mobile-svg {
-        display: block;
+        display: block;        
         /* clip-path: polygon(168.7px 121.222px, 168.819px 121.349px, 249.519px 121.349px, 249.519px 121.349px, 255.553533px 121.874496px, 261.288264px 123.395248px, 266.644191px 125.827652px, 271.542312px 129.088104px, 275.903625px 133.093px, 279.649128px 137.758736px, 282.699819px 143.001708px, 284.976696px 148.738312px, 286.400757px 154.884944px, 286.893px 161.358px, 286.893px 444.234px, 286.893px 444.234px, 286.40073px 450.706813px, 284.9766px 456.853304px, 282.69963px 462.589851px, 279.64884px 467.832832px, 275.90325px 472.498625px, 271.54188px 476.503608px, 266.64375px 479.764159px, 261.28788px 482.196656px, 255.55329px 483.717477px, 249.519px 484.243px, 37.877px 484.243px, 37.877px 484.243px, 31.840925px 483.717504px, 26.10512px 482.196752px, 20.748515px 479.764348px, 15.85004px 476.503896px, 11.488625px 472.499px, 7.7432px 467.833264px, 4.692695px 462.590292px, 2.41604px 456.853688px, 0.992165px 450.707056px, 0.5px 444.234px, 0.689px 120.947px, 0.689px 120.947px, 0.689px 120.947px, 1.175955px 114.473458px, 2.58568px 108.326544px, 4.841465px 102.589826px, 7.8666px 97.346872px, 11.584375px 92.68125px, 15.91808px 88.676528px, 20.791005px 85.416274px, 26.12644px 82.984056px, 31.847675px 81.463442px, 37.878px 80.938px, 131.04px 80.938px);  */
       }
   
       .svg-wrapper{
           width: 65vw;
+          backdrop-filter: none;
+          background: none;
       }
+
+      .svg-wrapper svg path {
+        fill: rgba(220, 240, 255, 0.7); /* Match previous fill color */
+        stroke-width: 1; /* Stroke width */
+      }
+
+      .svg-wrapper1 svg path {
+        stroke-width: 1; /* Stroke width */
+      }
+
+
+      .svg-wrapper1 {
+        width: 65vw;
+        top: -250px;
+    }
   
       .tab{
         width: 55vw;
@@ -461,6 +478,7 @@ h1 {
         margin-bottom: 560px;
         height: auto;
         font-size: 24px;
+        border: 0.5px solid #ffffff;
     }
   
       .graphics{
@@ -506,12 +524,29 @@ h1 {
   @media only screen and (max-width:480px)
   {
     .mobile-svg {
-      display: block;
+      display: block;   
       /* clip-path: polygon(168.7px 121.222px, 168.819px 121.349px, 249.519px 121.349px, 249.519px 121.349px, 255.553533px 121.874496px, 261.288264px 123.395248px, 266.644191px 125.827652px, 271.542312px 129.088104px, 275.903625px 133.093px, 279.649128px 137.758736px, 282.699819px 143.001708px, 284.976696px 148.738312px, 286.400757px 154.884944px, 286.893px 161.358px, 286.893px 444.234px, 286.893px 444.234px, 286.40073px 450.706813px, 284.9766px 456.853304px, 282.69963px 462.589851px, 279.64884px 467.832832px, 275.90325px 472.498625px, 271.54188px 476.503608px, 266.64375px 479.764159px, 261.28788px 482.196656px, 255.55329px 483.717477px, 249.519px 484.243px, 37.877px 484.243px, 37.877px 484.243px, 31.840925px 483.717504px, 26.10512px 482.196752px, 20.748515px 479.764348px, 15.85004px 476.503896px, 11.488625px 472.499px, 7.7432px 467.833264px, 4.692695px 462.590292px, 2.41604px 456.853688px, 0.992165px 450.707056px, 0.5px 444.234px, 0.689px 120.947px, 0.689px 120.947px, 0.689px 120.947px, 1.175955px 114.473458px, 2.58568px 108.326544px, 4.841465px 102.589826px, 7.8666px 97.346872px, 11.584375px 92.68125px, 15.91808px 88.676528px, 20.791005px 85.416274px, 26.12644px 82.984056px, 31.847675px 81.463442px, 37.878px 80.938px, 131.04px 80.938px);  */
     }
 
     .svg-wrapper{
         width: 73vw;
+        backdrop-filter: none;
+        background: none;
+    }
+
+    .svg-wrapper svg path {
+        fill: rgba(220, 240, 255, 0.7); /* Match previous fill color */
+        stroke-width: 1; /* Stroke width */
+      }
+
+      .svg-wrapper1 svg path {
+        stroke-width: 1; /* Stroke width */
+      }
+
+
+    .svg-wrapper1 {
+        width: 73vw;
+        top: -148px;
     }
 
     .tab{
@@ -520,6 +555,7 @@ h1 {
         margin-bottom: 330px;
         height: auto;
         font-size: 20px;
+        border: 0.5px solid #ffffff;
     }
 
     .graphics{
