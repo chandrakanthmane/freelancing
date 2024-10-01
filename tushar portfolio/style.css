@@ -498,6 +498,14 @@ h1 {
               height: 90px;
           }
       }
+
+      .content {
+        left: 6%;
+      }
+      
+      .portfolio {
+        width: 80%; 
+      }
   
       .social-icons{
          margin-top: 970px;
@@ -565,6 +573,14 @@ h1 {
         margin-bottom: 405px;
         font-size: 20px;
     }
+
+    .content {
+        left: 6%;
+      }
+      
+      .portfolio {
+        width: 80%; 
+      }
 
 
     .menu-icon {
