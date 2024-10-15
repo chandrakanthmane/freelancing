@@ -14,7 +14,31 @@
         src: url("./AislingFreeDemo.otf") format("opentype");
         }
 
-        .container{
+        #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff; /* Fallback color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        #loaderVideo {
+        max-width: 100%;
+        max-height: 100%;
+        }
+
+        /* Hide the main content initially */
+        .container {
+        opacity: 0;
+        display: none;
+        transition: opacity 1s ease-in-out;
+        }
+
+        .loaded.container{
             display: flex;
             flex-direction: column;
             width: 80vw;
@@ -23,7 +47,9 @@
             font-family: "Montserrat", sans-serif;
             font-size: 16px;
             font-weight: 500;
+            opacity: 1;
         }
+
 
         .main{
             width: 100%;
@@ -64,7 +90,7 @@
         .role{
             position: absolute;
             z-index: 2;
-            bottom: -7px;
+            bottom: 37px;
         }
 
         .divider{
@@ -245,11 +271,11 @@
             
             li{
                 padding-bottom: 20px;
-                text-indent: -30px;
-                margin-left: 25px;
+                /* text-indent: -30px;
+                margin-left: 25px; */
             }
 
-            li:before {
+            /* li:before {
                 color: blue;
                 content: "·";
                 font-size: 120px;
@@ -257,7 +283,7 @@
                 line-height: 0px;
                 position: relative;
                 top: -12px;
-            }
+            } */
         }
 
         .breaker{
@@ -418,7 +444,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="loader">
+        <video id="loaderVideo" autoplay muted loop>
+          <source src="./Animation - 1728832375301.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <div class="container" id="container">
         <div class="main">
             <video class="video" src="./AdobeStock_489082629.mp4" type="video/mp4" width="100%" height="100%" loop autoplay muted playsinline>
                 Sorry, your browser doesn't support HTML5 video tag.
@@ -431,7 +463,7 @@
                     <p>A website that spreads awareness about the respiratory system, its prevention, and products that support users in maintaining respiratory health in mexico</p>
                 </section>
                 <section class="right-section">
-                    <video src="" type="video/mp4" width="100%" height="500" loop autoplay muted playsinline>
+                    <video src="" type="video/mp4" width="100%" height="550" loop autoplay muted playsinline>
                         Sorry, your browser doesn't support HTML5 video tag.
                     </video>
                     <div class="client role"><img class="image" src="../assets/Group 43957.svg" alt="project-logo">My role: UX Designer</div>
@@ -512,7 +544,7 @@
         <div class="problem-statement">
             <h2>Typography</h2>
             <div class="typography">
-                <img src="./Group 43934.png" alt="Typography-image">
+                <img src="./Group 43964.png" alt="Typography-image">
             </div>            
         </div>
 
@@ -642,6 +674,23 @@
                     floodElement.setAttribute('flood-color', '#436EFF7D');  // Revert back to the original color
                     floodBlur.setAttribute('stdDeviation', '5.5');
                 });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+            // Wait until all images and other assets are fully loaded
+            window.addEventListener('load', function() {
+                // Hide the loader
+                const loader = document.getElementById('loader');
+                loader.style.display = 'none';
+
+                // Show the main content
+                const mainContent = document.getElementById('container');
+                if (mainContent) {
+                    mainContent.classList.add('loaded');
+                } else {
+                    console.error("Main content element not found.");
+                }
+            });
             });
 
             function toMoleculeProject(){
