@@ -20,15 +20,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #fff; /* Fallback color */
+        background: rgba(255, 255, 255, 0.074); /* Fallback color */
         display: flex;
         justify-content: center;
         align-items: center;
         }
 
         #loaderVideo {
-        max-width: 100%;
-        max-height: 100%;
+        height: 90px;
         }
 
         /* Hide the main content initially */
@@ -309,7 +308,7 @@
         .menu-icon {
             position: fixed;
             top: 50px;
-            right: 2%;
+            left: 2%;
             font-size: 24px;
             color: #333;
             cursor: pointer;
@@ -323,8 +322,6 @@
             content: attr(data-tooltip);
             position: absolute;
             bottom: 100%;
-            left: -40%;
-            transform: translateX(-50%);
             background-color: #333;
             color: #fff;
             padding: 2px 10px;
@@ -343,9 +340,8 @@
             content: '';
             position: absolute;
             bottom: 100%; /* Position the arrow right above the tooltip */
-            left: 50%;
+            left: 35%;
             top:-10px;
-            transform: translateX(-50%);
             transform: rotate(180deg);
             border-width: 6px;
             border-style: solid;
@@ -396,6 +392,17 @@
                 
                 color: #0D6390;
                 font-weight: 800;
+            }
+        }
+
+        @media only screen and (max-width:480px)
+        {
+            .thankyou-statement{
+                flex-direction: column;
+            }
+
+            .case-studies{
+                flex-direction: column;
             }
         }
 
@@ -590,7 +597,7 @@
             </div>           
         </div>
 
-        <div class="menu-icon" data-tooltip="Tushar Chawla"><img src="./Component 45 – 1.svg" alt="client-logo"></div>
+        <div class="menu-icon" data-tooltip="Tushar Chawla" onclick="navigateToMain()"><img src="./Component 45 – 1.svg" alt="client-logo"></div>
 
         <script>
             const svgElements = document.querySelectorAll('.project-svg');
@@ -636,6 +643,10 @@
 
             function toAkashProject(){
             window.location.href="./akash.htm";
+            }
+
+            function navigateToMain(){
+                window.location.href="../index.html";
             }
         </script>
 
