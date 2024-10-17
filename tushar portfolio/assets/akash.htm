@@ -338,7 +338,7 @@
             }
 
             .aspect{
-                aspect-ratio: 3/2.04;
+                aspect-ratio: auto;
             }
 
             .image-item {
@@ -670,13 +670,121 @@
 
         @media only screen and (max-width:480px)
         {
-            .thankyou-statement{
+            .thankyou-statement,  .case-studies{
                 flex-direction: column;
             }
 
-            .case-studies{
-                flex-direction: column;
+            .conclusion, .points{
+                width: 90%;
             }
+
+            .chakra-block{
+                .rectangle{
+                height: 50vh;
+                border: 15px solid #000;
+            }
+            }
+
+            .info-section {
+                p {
+                    width: 100%;
+                }
+            }
+
+            .info-section {
+                .row{
+                    flex-direction: column;
+                }
+                .border {
+                    width: 100%;
+                }
+            }    
+
+            .oneNation{           
+
+            .left{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .video{
+                width: 100%;
+                margin-left: 0;
+                }
+              .para{
+                width: 90%;
+                padding-right: 0px;
+
+                .conclusion{
+                    width: 100%;
+
+                    li{
+                        padding-bottom: 0px;
+                        width: 100%;
+                    }
+
+                }
+
+              }  
+            
+        }
+
+        p{
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        }
+
+        .visual{
+            div{
+                h2{
+                    top: 55px;
+                    left: 5px;
+                }
+            }
+        }
+
+            .Branding{
+            .right{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .video{
+                width: 100%;
+
+                video{
+                    margin: 8px 0;
+                    width: 93%;
+                }
+                }
+              .para{
+                width: 100%;
+                padding-left: 10px;
+              }  
+            }
+
+            .left{
+                flex-direction: column;
+                margin-top: 0;
+
+                .video{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                    margin-left: 0px;
+                }
+                }
+              .para{
+                width: 100%;
+                padding-right: 10px;
+              }  
+            
+        }
+            
+        }
         }
 
 
